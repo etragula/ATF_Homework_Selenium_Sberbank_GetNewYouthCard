@@ -14,7 +14,7 @@ public class BaseTest {
 
     @Before
     public void doBefore() {
-        System.setProperty("webdriver.chrome.driver", "webDriver/chromedriver");        // устанавка пути к драйверу MAC OS
+        System.setProperty("webdriver.chrome.driver", "webDriver/chromedriver");        // установка пути к драйверу MAC OS
         driver = new ChromeDriver();                                                    // инициализация драйвера MAC OS
         driver.manage().window().maximize();                                            // увеличение окна браузера
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);  // установка таймаута на загрузку страницы
